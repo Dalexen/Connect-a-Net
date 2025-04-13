@@ -1,63 +1,58 @@
+/* General Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Frutiger', Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f2f2f2;
+  overflow: hidden;
 }
 
-h1 {
-  color: #333;
+/* Background Color for Login Page */
+.login-background {
+  background: #008080;
 }
 
-.login-container, .file-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Glassmorphism Container */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 40px;
   text-align: center;
-  width: 300px;
+  width: 400px;
+}
+
+h1, h2 {
+  color: #fff;
+  margin: 0;
 }
 
 input {
   display: block;
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  padding: 12px;
+  margin: 15px 0;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 16px;
 }
 
 button {
   background-color: #007bff;
   color: #fff;
-  padding: 10px 15px;
+  padding: 12px 15px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
   background-color: #0056b3;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin: 10px 0;
 }

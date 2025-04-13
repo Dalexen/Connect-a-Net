@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connect-a-Net</title>
+  <title>Connect-a-Net - Login</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Frutiger:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div id="app">
-    <div class="login-container" id="login-container">
+<body class="login-background">
+  <div id="app" class="glass">
+    <div class="login-container">
       <h1>Connect-a-Net</h1>
       <p id="message"></p>
       <div id="login-form">
@@ -20,21 +21,12 @@
       </div>
       <div id="create-account-form" style="display: none;">
         <h2>Create Account</h2>
+        <input type="text" id="create-name" placeholder="Your Name" required>
         <input type="text" id="create-username" placeholder="Username" required>
         <input type="password" id="create-password" placeholder="Password" required>
         <button onclick="createAccount()">Create Account</button>
         <p><a href="#" onclick="showLogin()">Back to login</a></p>
       </div>
-    </div>
-    <div class="file-container" id="file-container" style="display: none;">
-      <h1>Welcome to Connect-a-Net</h1>
-      <h2>Available Files</h2>
-      <ul id="file-list">
-        <li><a href="#" download="file1.txt">File 1</a></li>
-        <li><a href="#" download="file2.txt">File 2</a></li>
-        <li><a href="#" download="file3.txt">File 3</a></li>
-      </ul>
-      <button onclick="logout()">Logout</button>
     </div>
   </div>
   <script src="script.js"></script>
